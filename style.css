@@ -1,0 +1,146 @@
+* {
+    margin: 0; /* Remove a margem de todos os elementos. */
+    padding: 0; /* Remove o preenchimento de todos os elementos. */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do elemento. */
+}
+
+body {
+    font-family: 'Playfair Display', serif; /* Define a fonte do corpo da página .*/
+    background-color: #fff; /* Define a cor de fundo como branca. */
+    color: #000; /* Define a cor do texto como preta */
+    line-height: 1.6; /* Define o espaçamento entre as linhas de texto .*/
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Usa o Flexbox para organizar os itens do menu horizontalmente. */
+    justify-content: center; /* Centraliza os itens do menu */
+    background-color: #333; /* Define a cor de fundo do menu como cinza escuro .*/
+    padding: 1rem; /* Adiciona preenchimento ao menu */
+}
+
+nav ul li {
+    margin: 0 1.5rem; /* Adiciona margem entre os itens do menu .*/
+}
+
+nav ul li a {
+    color: white; /* Define a cor dos links como branca .*/
+    text-decoration: none; /* Remove o sublinhado dos links. */
+    font-weight: 700; /* Define os links com fonte em negrito .*/
+    font-size: 1.2rem; /* Define o tamanho da fonte dos links. */
+    text-transform: uppercase; /* Transforma os links em maiúsculas .*/
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado nos links quando o mouse passa sobre eles. */
+}
+
+.hero, .content {
+    padding: 2rem; /* Adiciona preenchimento às seções principais. */
+    text-align: center; /* Centraliza o texto dentro das seções. */
+    margin: 2rem 0; /* Adiciona margem acima e abaixo das seções .*/
+}
+
+.hero h1, .content h2 {
+    font-size: 2.5rem; /* Define o tamanho da fonte dos títulos. */
+    margin-bottom: 1rem; /* Adiciona espaço abaixo dos títulos .*/
+}
+
+.hero p, .content p {
+    font-size: 1.2rem; /* Define o tamanho da fonte dos parágrafos .*/
+    margin-bottom: 1.5em; /* Adiciona espaço após cada parágrafo .*/
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Organiza os itens do menu em coluna em telas pequenas. */
+        padding: 1rem; /* Ajusta o preenchimento do menu para telas menores .*/
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Reduz a margem entre os itens do menu em telas menores .*/
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Ajusta o tamanho do título na seção hero .*/
+    }
+
+    .content h2 {
+        font-size: 1.8rem; /* Ajusta o tamanho do título na seção content .*/
+    }
+
+    .content p {
+        font-size: 1rem; /* Ajusta o tamanho da fonte dos parágrafos .*/
+    }
+}
+
+.canva-embed iframe {
+    border-radius: 8px; /* Adiciona borda arredondada ao iframe .*/
+    max-width: 100%; /* Garante que o iframe ocupe no máximo 100% da largura do container .*/
+    height: 500px; /* Define a altura do iframe .*/
+}
+
+[data-aos="fade-down"] {
+    opacity: 0; /* Torna o elemento invisível no início .*/
+    transform: translateY(-50px); /* Move o elemento para cima .*/
+    transition: all 0.5s ease; /* Define uma transição suave para o elemento .*/
+}
+
+[data-aos="fade-right"] {
+    opacity: 0; /* Torna o elemento invisível no início .*/
+    transform: translateX(50px); /* Move o elemento para a direita .*/
+    transition: all 0.5s ease; /* Define uma transição suave para o elemento. */
+}
+
+[data-aos="fade-left"] {
+    opacity: 0; /* Torna o elemento invisível no início. */
+    transform: translateX(-50px); /* Move o elemento para a esquerda .*/
+    transition: all 0.5s ease; /* Define uma transição suave para o elemento .*/
+}
+
+[data-aos="zoom-in"] {
+    opacity: 0; /* Torna o elemento invisível no início .*/
+    transform: scale(0.9); /* Aplica um zoom leve para fora no início .*/
+    transition: all 0.5s ease; /* Define uma transição suave para o elemento .*/
+}
+
+[data-aos="fade-up"] {
+    opacity: 0; /* Torna o elemento invisível no início .*/
+    transform: translateY(50px); /* Move o elemento para baixo .*/
+    transition: all 0.5s ease; /* Define uma transição suave para o elemento. */
+}
+
+[data-aos].aos-animate {
+    opacity: 1; /* Torna o elemento visível .*/
+    transform: translateY(0) scale(1); /* Reverte a transformação inicial para mostrar o elemento. */
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox para os elementos dentro do container */
+    flex-direction: column; /* Organiza os itens em uma coluna. */
+    align-items: center; /* Centraliza os itens no eixo horizontal .*/
+    justify-content: center; /* Centraliza os itens no eixo vertical. */
+    text-align: center; /* Centraliza o texto dentro do container .*/
+    gap: 20px; /* Define o espaço entre os itens dentro do container .*/
+}
+
+.imagem {
+    width: 200px; /* Define a largura da imagem. */
+    height: auto; /* Mantém a proporção da imagem. */
+}
+
+.texto {
+    max-width: 600px; /* Limita a largura do texto .*/
+    margin-top: 10px; /* Adiciona espaço entre a imagem e o texto .*/
+}
+
+.imagens-container {
+    display: flex; /* Ativa o Flexbox para o container de imagens. */
+    justify-content: center; /* Centraliza as imagens dentro do container. */
+    gap: 20px; /* Define o espaço entre as imagens. */
+}
+
+.imagens-container img {
+    max-width: 40%; /* Limita o tamanho das imagens a 40% da largura do container. */
+    height: auto; /* Mantém a proporção das imagens. */
+} 
